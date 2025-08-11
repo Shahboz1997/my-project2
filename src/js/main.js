@@ -49,3 +49,33 @@ input.addEventListener("input", (evt) => {
 button.addEventListener("click", (evt) => {
   console.log("send", inputVal);
 });
+
+
+const data = [0,-9,3,4,5,6,7];    
+function isThisNumber(value) {
+  if (data.includes(value)) {
+    console.log("есть");
+  }
+  else {
+    console.log("нет");
+  }
+}
+function possitiveFilter() {
+  const copyData = data.slice();
+  const filterArray = copyData.filter(item => item>0);
+  return filterArray;
+}
+
+
+console.log("data.length", data.length);
+if (data.length > 0) {
+  console.log("данные есть");
+  isThisNumber(5);
+  const array = possitiveFilter();
+  console.log("array", array);
+}
+else {
+  console.log("данных нет");
+}
+
+// 3,4,5,6,7
