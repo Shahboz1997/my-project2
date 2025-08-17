@@ -96,3 +96,25 @@ const myArray3 = myArray.filter(function(elem){
   return (elem <0);
 });
 console.log("myArray3", myArray3);
+
+const newCopy = myArray.slice(3,6);
+console.log("newCopy", newCopy);
+
+
+const arr= [0,2,4,5,6,3,7,8,4,6,9];
+console.log(arr[0]);
+console.log(arr[2]);
+console.log(arr[3]);
+
+const index = arr.indexOf(3);
+console.log("index",index);
+
+function notNull(){
+  const copyData = arr.slice();
+  const filterArray = copyData.filter(item => item!==0 && item!==6);
+  return filterArray;
+}
+console.log("notNull",notNull());
+
+const withoutTwo = arr.splice(2,1);
+console.log("withoutTwo", withoutTwo);
