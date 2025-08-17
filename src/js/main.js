@@ -66,16 +66,33 @@ function possitiveFilter() {
   return filterArray;
 }
 
-
 console.log("data.length", data.length);
 if (data.length > 0) {
   console.log("данные есть");
   isThisNumber(5);
   const array = possitiveFilter();
   console.log("array", array);
-}
+}  
 else {
   console.log("данных нет");
 }
 
-// 3,4,5,6,7
+
+const myArray = [1,2,3,4,4,6,-7,-9,0];
+console.log("myArray", myArray);
+
+const myArray1 = myArray.filter(function (elem) {
+    return (elem !==0);
+});
+console.log("myArray1", myArray1);
+
+
+const myArray2 = myArray.map(function(elem){
+  return (elem *2);
+});
+console.log("myArray2", myArray2);
+
+const myArray3 = myArray.filter(function(elem){
+  return (elem <0);
+});
+console.log("myArray3", myArray3);

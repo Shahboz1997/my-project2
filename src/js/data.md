@@ -1,0 +1,1 @@
+<script type="module">import swiper from 'https://cdn.jsdelivr.net/npm/swiper@11.2.10/+esm'</script>
