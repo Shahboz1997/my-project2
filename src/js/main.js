@@ -116,5 +116,17 @@ function notNull(){
 }
 console.log("notNull",notNull());
 
-const withoutTwo = arr.splice(2,1);
+const withoutTwo = arr.splice(2);
 console.log("withoutTwo", withoutTwo);
+
+
+let user = {
+  name:"Jack",
+  age:30
+}
+user.isAdmin = true;
+console.log(user);
+delete user.age;
+console.log(user);
+user.age = 34;
+console.log(user);
